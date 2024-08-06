@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vid Player</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="title_activity_folder_videos">FolderVideosActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+</resources>

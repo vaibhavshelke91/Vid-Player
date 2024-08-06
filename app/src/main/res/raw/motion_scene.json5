@@ -1,0 +1,54 @@
+{
+  ConstraintSets: {
+    start: {
+      playerCard: {
+        width: "spread",
+        height: 60,
+        bottom:  ['parent', 'bottom', 90],
+        start: ['parent', 'start', 10],
+        end: ['parent', 'end', 20]
+      },
+
+      nav: {
+        width: "spread",
+        height: "spread",
+        bottom:  ['parent', 'bottom', 0],
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 0],
+
+      }
+    },
+    end: {
+      playerCard: {
+        width: "spread",
+        height: "spread",
+        bottom:  ['parent', 'bottom', 0],
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 0],
+      },
+      nav: {
+        width: "spread",
+        height: 0,
+        bottom:  ['parent', 'bottom', 0],
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        translationY: -500,
+
+      }
+    }
+  },
+
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end',
+      onSwipe: {
+        anchor: 'playerCard',
+        direction: 'up',
+        side: 'top'
+      },
+    }
+  }
+}
